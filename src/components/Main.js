@@ -1,27 +1,26 @@
+import React from "react";
 import Card from "./Card";
 import Updates from "./Updates";
 import data from "../data/CardData";
-import updates from "../data/UpadateData";
-
-const cardData = data.map((item) => {
-    return (
-        // <h2>{ item.social}</h2>
-        
-        <Card key={item.id} item={item} darkMode={false} />
-    );
-});
-
-const updatesData = updates.map((item) => {
-    return (
-        // <h2>{ item.social}</h2>
-        <Updates key={item.id} item={item} />
-    );
-});
+import updates from "../data/UpdateData";
 
 function Main(props) {
-    console.log(data);
+    const cardData = data.map((item) => {
+        return (
+            // <h2>{ item.social}</h2>
+            <Card key={item.id} item={item} darkMode={props.darkMode} />
+        );
+    });
+
+    const updatesData = updates.map((item) => {
+        return (
+            // <h2>{ item.social}</h2>
+            <Updates key={item.id} item={item} darkMode={props.darkMode} />
+        );
+    });
+
     return (
-        <main className= {props.darkMode ? " dark" : " "}>
+        <main className={props.darkMode ? "dark-bg" : " "}>
             <section className="social__cards">
                 {/* <Card/> */}
                 {cardData}

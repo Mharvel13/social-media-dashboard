@@ -38,6 +38,10 @@ main {
     padding: 0 5rem;
 }
 
+.dark-bg {
+    background-color: $Dark-Very-Dark-Blue-BG;
+}
+
 .social__cards {
     display: flex;
     justify-content: center;
@@ -63,8 +67,13 @@ main {
 
     .card:hover {
         cursor: pointer;
-        background-color: $Toogle-base;
+        background-color: rgb(225, 227, 240);
     }
+
+    .card:hover.dark-card {
+        background-color: rgb(51, 58, 86);
+    }
+
     .socials__indicator {
         display: flex;
         justify-content: center;
@@ -143,7 +152,6 @@ main {
                 font-weight: 500;
             }
         }
-        
 
         .updates__card__stats {
             display: flex;
@@ -169,7 +177,7 @@ main {
             }
         }
     }
-     
+
     .dark-card {
         background-color: $Dark-dark-Desaturated-Blue-Card-BG;
         color: $White-Text;
@@ -177,10 +185,10 @@ main {
 
     .updates__card:hover {
         cursor: pointer;
-        background-color: $Toogle-base;
+        background-color: rgb(225, 227, 240);
     }
-}
-
-.dark-bg {
-    background-color: $Dark-Very-Dark-Blue-BG;
+    .updates__card:hover.dark-card {
+        cursor: pointer;
+        background-color: rgb(51, 58, 86);
+    }
 }

@@ -5,12 +5,10 @@ function Card(props) {
         borderTopWidth: "5px",
         borderTopStyle: "solid",
         borderTopColor: props.item.color,
-
-        // borderTop : "5px solid props.item.color',
+        // borderTop: `"5px solid ${props.item.color}`,
     };
 
-    // className={`container${some condition ? ' bg-green' : ''}`} - Answer from stackoverflow on how to add multiple classname that also contains a conditional
-
+    // className={`container${some condition ? ' bg-green' : ''}`} - Answer from stackoverflow on how to add multiple classname that also contains a conditional classname
     return (
         <div
             className={`card ${props.darkMode ? " dark-card" : " "}`}
