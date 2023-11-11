@@ -1,0 +1,186 @@
+@import "./scss/base-config";
+
+// DARK MODE STYLES
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $Light-Very-Pale-Blue-Top-BG-Pattern;
+    padding: 1rem 3rem 10rem 3rem;
+
+    h1,
+    p {
+        margin: 5px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 14px;
+    }
+
+    .toggle__side {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+}
+.dark-bg-top {
+    background-color: $Dark-Very-Dark-Blue-Top-BG-Pattern;
+    color: $White-Text;
+}
+
+.light__text {
+    color: $Light-Dark-Grayish-Blue-Text;
+}
+
+main {
+    padding: 0 5rem;
+}
+
+.social__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    position: relative;
+    bottom: 6rem;
+
+    .card {
+        width: 80%;
+        background-color: $light-light-Grayish-Blue-Card-BG;
+        border-radius: 10px;
+        padding: 10px;
+        border-top: 5px solid $Facebook;
+        // margin: 2rem;
+    }
+
+    .dark-card {
+        background-color: $Dark-dark-Desaturated-Blue-Card-BG;
+        color: $White-Text;
+    }
+
+    .card:hover {
+        cursor: pointer;
+        background-color: $Toogle-base;
+    }
+    .socials__indicator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        font-weight: bold;
+
+        p {
+            color: $Light-Dark-Grayish-Blue-Text;
+        }
+    }
+
+    .followers {
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        p {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: $Light-Dark-Grayish-Blue-Text;
+            margin: 0;
+        }
+    }
+    .followers__changes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        p {
+            color: $Primary-Lime-Green;
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+}
+
+.overview {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $Light-Dark-Grayish-Blue-Text;
+}
+
+.updates__cards__section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    gap: 2rem;
+    // padding: 2rem 0;
+
+    // width: 100%;
+
+    .updates__card {
+        width: 100%;
+        border-radius: 10px;
+        background-color: $light-light-Grayish-Blue-Card-BG;
+        color: $Light-Very-Dark-Blue-Text;
+
+        margin: 10px;
+        padding: 1rem 2rem;
+
+        .updates__card__header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                // font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+        
+
+        .updates__card__stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 0;
+                // display: none;
+            }
+        }
+        .updates-card-stats {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+
+            p {
+                font-size: small;
+            }
+        }
+    }
+     
+    .dark-card {
+        background-color: $Dark-dark-Desaturated-Blue-Card-BG;
+        color: $White-Text;
+    }
+
+    .updates__card:hover {
+        cursor: pointer;
+        background-color: $Toogle-base;
+    }
+}
+
+.dark-bg {
+    background-color: $Dark-Very-Dark-Blue-BG;
+}
