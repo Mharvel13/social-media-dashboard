@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "./Card";
 import Updates from "./Updates";
 import data from "../data/CardData";
