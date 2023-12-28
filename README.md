@@ -1,8 +1,48 @@
-# Getting Started with Create React App
+# Frontend Mentor - Social media dashboard with theme switcher solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [## Available Scripts](#available-scripts)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+    -   [Continued development](#continued-development)
+    -   [Useful resources](#useful-resources)
+-   [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+-   View the optimal layout for the site depending on their device's screen size
+-   See hover states for all interactive elements on the page
+-   Toggle color theme to their preference
+
+### Screenshot
+
+-   Desktop Solution View
+    ![Desktop](./screenshot/Desktop-Dark-Social%20Media%20Dashboard.png)
+
+-   Mobile Solution View
+    ![Mobile](./screenshot/Mobile-Dark-Social-Media-Dashboard.png)
+
+### Links
+
+-   Frontend Mentor Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/social-media-dashboard-with-dark-theme-react-and-sass-QZ2HU0NE7v)
+-   Live Site URL: [Live Hosted Website](https://sm-dashboard-project.netlify.app/)
+-   Github Solution URL: [Github Hosted Codes](https://github.com/Mharvel13/social-media-dashboard)
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
@@ -14,57 +54,40 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## My process
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built with
 
-### `npm run build`
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   Flexbox
+-   CSS Grid
+-   Mobile-first workflow
+-   [React](https://reactjs.org/) - JS library
+-   SASS - CSS Preprocessor libary
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### What I learned
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Introduction to React and Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Learning React has been intresting and exciting and it's necessary to practice the concepts. The use of Components, Props and State was implemented in the course of this project.
 
-### `npm run eject`
+I implemented the use ofconditional rendering in classnames to toogle the dark mode functionality.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```jsx
+  <header className={`header  ${props.darkMode ? "dark-bg-top" : " "}`}>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+At the end of it all, its a good practice project and useful in solidifying knowledge in React Concepts
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Continued development
 
-## Learn More
+This project can be developed to pull actual data from various social media accounts and useful in tracking activities and progress in these applications
+It could be a project that incoperates backend technologies and API usage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   GitHub Profile - [Mharvel13](https://github.com/Mharvel13)
+-   Frontend Mentor Profile - [Marvel Victor](https://www.frontendmentor.io/profile/Mharvel13)
+-   Twitter - [Marvel](https://twitter.com/Mharvel_O)
