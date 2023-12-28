@@ -1,4 +1,3 @@
-
 function Card(props) {
     const borderStyle = {
         borderTopWidth: "5px",

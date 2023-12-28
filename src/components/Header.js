@@ -1,7 +1,6 @@
 import Toggle from "./Toggle";
 
 function Header(props) {
-    
     return (
         //  <div className={`header  ${props.darkMode ? "dark-bg-top" : " "}`}>
         <header className={`header  ${props.darkMode ? "dark-bg-top" : " "}`}>
@@ -11,11 +10,10 @@ function Header(props) {
             </div>
             <div className="toggle__side">
                 <p>Dark Mode</p>
-                <Toggle toggleDark ={props.toggleDark} />
+                <Toggle toggleDark={props.toggleDark} />
             </div>
         </header>
     );
 }
-
 
 export default Header;
